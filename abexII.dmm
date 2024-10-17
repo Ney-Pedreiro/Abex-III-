@@ -1,0 +1,1475 @@
+{
+	"tables": {
+		"92a3e7c2-33f7-416b-8593-2ba6c9a0c896": {
+			"id": "92a3e7c2-33f7-416b-8593-2ba6c9a0c896",
+			"visible": true,
+			"name": "Jogador",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "194719cd-0824-44be-8dbe-7fd1f02d7d76",
+					"name": "idJogador",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "7081d479-1ffd-422c-b972-860b6e07bb8f",
+					"name": "nome",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "57947b1c-b3fd-4340-8447-f6a333332e38",
+					"name": "login",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "7d5f8cff-1985-4bff-b1fb-1f91ddbe52a7",
+					"name": "senha",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				}
+			],
+			"relations": [
+				"57931f73-932e-4cf7-b1dd-0fb019d155f4"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "77a16235-c025-42b7-b355-208878f2dc36",
+					"name": "Jogador_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "fac22de5-9107-4e7b-864e-c8be9a0681c9",
+							"colid": "194719cd-0824-44be-8dbe-7fd1f02d7d76"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"63df53dd-d9e0-47f1-a7b4-558f3fa1f0ae": {
+			"id": "63df53dd-d9e0-47f1-a7b4-558f3fa1f0ae",
+			"visible": true,
+			"name": "Personagem",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "4b49d374-dcc2-4167-a42e-7424e0560bcf",
+					"name": "idPersonagem",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "ae039b5f-a27c-4a4a-82fd-fc93f81bcc3c",
+					"name": "nome",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "0608fea6-87ed-4c35-a253-1ef37b88d4c2",
+					"name": "genero",
+					"datatype": "char",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "8430f995-13f4-45c9-a04b-f0bc19096c32",
+					"name": "necessidades",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "df0d0d6f-087e-4bac-891e-cbd20d0ad0ae",
+					"name": "Jogador_idJogador",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"57931f73-932e-4cf7-b1dd-0fb019d155f4",
+				"fe040e40-0df5-418d-8cd7-0fb5f65b3df6",
+				"d80ef08e-b099-4e0e-86e7-6c75bb24b8b1",
+				"abe59e68-05ef-4f76-b0e3-7482f9c8fb17",
+				"20a99edf-6bab-4ae5-877c-95cd7e1a09df"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "95c7cae9-3632-4676-a932-a5ab242adc32",
+					"name": "Personagem_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "f1e95671-afa4-40f3-8641-ea8e7e9c8fae",
+							"colid": "4b49d374-dcc2-4167-a42e-7424e0560bcf"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"27904be4-5bff-4053-bb9d-867fe78a82a9": {
+			"id": "27904be4-5bff-4053-bb9d-867fe78a82a9",
+			"visible": true,
+			"name": "Banco",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "a7f0f301-2ca7-483d-884a-67ed486bde61",
+					"name": "idBanco",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "3e37debb-ead0-4f1a-985e-7dc997ac98a6",
+					"name": "valor_emprestimo",
+					"datatype": "float8",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "ecd4ba11-3edc-42fb-8145-21a086803eb4",
+					"name": "valor_investimento",
+					"datatype": "float8",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "efc57b69-77a3-445c-ad74-ba652a9c2c8c",
+					"name": "saldo",
+					"datatype": "float8",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "908c4895-d7f9-4c07-b21f-d30690056aee",
+					"name": "Personagem_idPersonagem",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"fe040e40-0df5-418d-8cd7-0fb5f65b3df6"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "1ce7e4d8-1c3c-4d29-b967-438d80adb145",
+					"name": "Banco_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "21b38d40-4e86-443e-959a-54ff46caac3e",
+							"colid": "a7f0f301-2ca7-483d-884a-67ed486bde61"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"393935fc-b6c3-4306-8c58-77993821c0ed": {
+			"id": "393935fc-b6c3-4306-8c58-77993821c0ed",
+			"visible": true,
+			"name": "Estado_Personagem",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "14796ab8-f6c7-47dd-abb4-7983dad87582",
+					"name": "idEstadoPersonagem",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "20cf4484-ce94-4bf6-8f08-b67e54aa17b6",
+					"name": "status_fome",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "49471708-200a-4491-8596-6acb6e04e1b6",
+					"name": "status_sede",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "db69fe00-5b16-42da-8725-0424e29ea0d0",
+					"name": "status_felicidade",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "a04ac03d-d6ac-4f36-8408-c089b280d664",
+					"name": "Personagem_idPersonagem",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"d80ef08e-b099-4e0e-86e7-6c75bb24b8b1"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "2d926359-fa70-4e8a-86a3-a4a7631d0ba9",
+					"name": "Estado_Personagem_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "0e6438a0-c1ae-4024-aa66-d291c0f21c45",
+							"colid": "14796ab8-f6c7-47dd-abb4-7983dad87582"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"c9401107-8f4a-4a36-8982-323df7d069b3": {
+			"id": "c9401107-8f4a-4a36-8982-323df7d069b3",
+			"visible": true,
+			"name": "Compra",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "5e45f508-0983-4056-8fc7-1fe088e22e95",
+					"name": "idCompra",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "72111a1e-b50c-4ff8-a489-7c490777e06e",
+					"name": "Personagem_idPersonagem",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"abe59e68-05ef-4f76-b0e3-7482f9c8fb17",
+				"9334930a-6f7f-4947-bf11-30d8e6ecdd3e"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "b6e58845-17e5-4efd-bed1-0f774d4e7ca7",
+					"name": "Compra_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "deba791b-addb-42c7-a305-43fbe9d72c33",
+							"colid": "5e45f508-0983-4056-8fc7-1fe088e22e95"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"e934d16c-f923-4506-9921-c1727dabc28c": {
+			"id": "e934d16c-f923-4506-9921-c1727dabc28c",
+			"visible": true,
+			"name": "Loja",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "1db1755c-5fe0-47c5-ac2e-9391817b0208",
+					"name": "idLoja",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "3f174710-7bcc-4195-9244-72b0ce2cf3f8",
+					"name": "nome_produto",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "bbcd8c6a-955d-45d8-b3c7-9a65988f20f3",
+					"name": "preco",
+					"datatype": "float8",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "bd67175a-76da-42b6-bfb4-f6c0c0ba5189",
+					"name": "quantidade",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "cfb2a761-4173-41a9-b4bc-e9faddb2bd4b",
+					"name": "Compra_idCompra",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"9334930a-6f7f-4947-bf11-30d8e6ecdd3e"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "0e54f02a-7e6c-4baa-a1a2-c337eeb881cd",
+					"name": "Loja_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "87c7e6ae-6f44-4981-ac66-7204bae40bf0",
+							"colid": "1db1755c-5fe0-47c5-ac2e-9391817b0208"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"ea81cccb-ff3a-4f58-bf51-cd64c8ec9268": {
+			"id": "ea81cccb-ff3a-4f58-bf51-cd64c8ec9268",
+			"visible": true,
+			"name": "MiniJogo",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "4bfbb117-d2ef-4ea9-8a8a-b83b7d1f6596",
+					"name": "idMiniJogo",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "592ae8ec-fff1-4fa3-a9c8-fff9beb9324a",
+					"name": "minijogo",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "ab0ef65d-f3a3-441a-8c68-33c22eade45f",
+					"name": "Personagem_idPersonagem",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"20a99edf-6bab-4ae5-877c-95cd7e1a09df",
+				"0f48ddcf-572a-4fdb-a9c9-939471e40920"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "5f6bdef6-dd3d-46da-98d6-b94b45825b23",
+					"name": "MiniJogo_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "f1ec3981-aed8-4b2d-b571-f565ae22523b",
+							"colid": "4bfbb117-d2ef-4ea9-8a8a-b83b7d1f6596"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		},
+		"8a4b22fc-ea86-493a-b389-7916de66f6f9": {
+			"id": "8a4b22fc-ea86-493a-b389-7916de66f6f9",
+			"visible": true,
+			"name": "Profissao",
+			"desc": "",
+			"estimatedSize": "",
+			"cols": [
+				{
+					"id": "d3235d40-8d19-42cc-95db-effdd73a4a3a",
+					"name": "idProfissao",
+					"datatype": "integer",
+					"param": "",
+					"pk": true,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "9d8915e7-a449-407f-8c33-a74668c5d12e",
+					"name": "profissao",
+					"datatype": "varchar",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "8ca3dd1d-fbbd-473e-a505-253a5a88235a",
+					"name": "salario",
+					"datatype": "float8",
+					"param": "",
+					"pk": false,
+					"nn": false,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": ""
+				},
+				{
+					"id": "912ffe66-1fc1-439f-a36b-badd1fb901fd",
+					"name": "MiniJogo_idMiniJogo",
+					"datatype": "integer",
+					"param": "",
+					"pk": false,
+					"nn": true,
+					"list": false,
+					"comment": "",
+					"defaultvalue": "",
+					"data": "",
+					"after": "",
+					"collation": null,
+					"pg": {
+						"generatedIdentity": "no",
+						"generated": "",
+						"storage": "",
+						"compression": ""
+					},
+					"estimatedSize": "",
+					"fk": true
+				}
+			],
+			"relations": [
+				"0f48ddcf-572a-4fdb-a9c9-939471e40920"
+			],
+			"lines": [],
+			"keys": [
+				{
+					"id": "151ba6dc-13ad-4a2c-b750-29ca28dad9ef",
+					"name": "Profissao_pkey",
+					"isPk": true,
+					"cols": [
+						{
+							"id": "5ca8bb6d-4136-409d-8d1a-ce387d4014c0",
+							"colid": "d3235d40-8d19-42cc-95db-effdd73a4a3a"
+						}
+					]
+				}
+			],
+			"indexes": [],
+			"embeddable": false,
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"beforeScript": "",
+			"afterScript": "",
+			"objectType": "table",
+			"pg": {
+				"rowsecurity": false,
+				"schema": "",
+				"tablespace": "",
+				"inherits": "",
+				"storageParameters": "",
+				"partition": "",
+				"partitionNames": []
+			}
+		}
+	},
+	"relations": {
+		"57931f73-932e-4cf7-b1dd-0fb019d155f4": {
+			"id": "57931f73-932e-4cf7-b1dd-0fb019d155f4",
+			"visible": true,
+			"name": "Personagem_Jogador_idJogador_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "77a16235-c025-42b7-b355-208878f2dc36",
+			"parent": "92a3e7c2-33f7-416b-8593-2ba6c9a0c896",
+			"child": "63df53dd-d9e0-47f1-a7b4-558f3fa1f0ae",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "64b587af-7620-4ac7-a8f8-1f08907ff2b0",
+					"parentcol": "194719cd-0824-44be-8dbe-7fd1f02d7d76",
+					"childcol": "df0d0d6f-087e-4bac-891e-cbd20d0ad0ae"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"fe040e40-0df5-418d-8cd7-0fb5f65b3df6": {
+			"id": "fe040e40-0df5-418d-8cd7-0fb5f65b3df6",
+			"visible": true,
+			"name": "Banco_Personagem_idPersonagem_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "95c7cae9-3632-4676-a932-a5ab242adc32",
+			"parent": "63df53dd-d9e0-47f1-a7b4-558f3fa1f0ae",
+			"child": "27904be4-5bff-4053-bb9d-867fe78a82a9",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "a1acc526-5d67-4466-9239-522b4acc914e",
+					"parentcol": "4b49d374-dcc2-4167-a42e-7424e0560bcf",
+					"childcol": "908c4895-d7f9-4c07-b21f-d30690056aee"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"d80ef08e-b099-4e0e-86e7-6c75bb24b8b1": {
+			"id": "d80ef08e-b099-4e0e-86e7-6c75bb24b8b1",
+			"visible": true,
+			"name": "Estado_Personagem_Personagem_idPersonagem_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "95c7cae9-3632-4676-a932-a5ab242adc32",
+			"parent": "63df53dd-d9e0-47f1-a7b4-558f3fa1f0ae",
+			"child": "393935fc-b6c3-4306-8c58-77993821c0ed",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "19f310bb-262c-418a-aa4b-e41331498a5b",
+					"parentcol": "4b49d374-dcc2-4167-a42e-7424e0560bcf",
+					"childcol": "a04ac03d-d6ac-4f36-8408-c089b280d664"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"abe59e68-05ef-4f76-b0e3-7482f9c8fb17": {
+			"id": "abe59e68-05ef-4f76-b0e3-7482f9c8fb17",
+			"visible": true,
+			"name": "Compra_Personagem_idPersonagem_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "95c7cae9-3632-4676-a932-a5ab242adc32",
+			"parent": "63df53dd-d9e0-47f1-a7b4-558f3fa1f0ae",
+			"child": "c9401107-8f4a-4a36-8982-323df7d069b3",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "many",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "743f8142-4b00-448c-af87-00e6384808f0",
+					"parentcol": "4b49d374-dcc2-4167-a42e-7424e0560bcf",
+					"childcol": "72111a1e-b50c-4ff8-a489-7c490777e06e"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"9334930a-6f7f-4947-bf11-30d8e6ecdd3e": {
+			"id": "9334930a-6f7f-4947-bf11-30d8e6ecdd3e",
+			"visible": true,
+			"name": "Loja_Compra_idCompra_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "b6e58845-17e5-4efd-bed1-0f774d4e7ca7",
+			"parent": "c9401107-8f4a-4a36-8982-323df7d069b3",
+			"child": "e934d16c-f923-4506-9921-c1727dabc28c",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "many",
+			"c_ch": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "bcf4b875-9667-4b15-9887-5f110e4abe7c",
+					"parentcol": "5e45f508-0983-4056-8fc7-1fe088e22e95",
+					"childcol": "cfb2a761-4173-41a9-b4bc-e9faddb2bd4b"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"20a99edf-6bab-4ae5-877c-95cd7e1a09df": {
+			"id": "20a99edf-6bab-4ae5-877c-95cd7e1a09df",
+			"visible": true,
+			"name": "MiniJogo_Personagem_idPersonagem_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "95c7cae9-3632-4676-a932-a5ab242adc32",
+			"parent": "63df53dd-d9e0-47f1-a7b4-558f3fa1f0ae",
+			"child": "ea81cccb-ff3a-4f58-bf51-cd64c8ec9268",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "8a48b984-30bd-4b4b-a52e-8746ae289567",
+					"parentcol": "4b49d374-dcc2-4167-a42e-7424e0560bcf",
+					"childcol": "ab0ef65d-f3a3-441a-8c68-33c22eade45f"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		},
+		"0f48ddcf-572a-4fdb-a9c9-939471e40920": {
+			"id": "0f48ddcf-572a-4fdb-a9c9-939471e40920",
+			"visible": true,
+			"name": "Profissao_MiniJogo_idMiniJogo_fkey",
+			"desc": "",
+			"type": "identifying",
+			"parent_key": "5f6bdef6-dd3d-46da-98d6-b94b45825b23",
+			"parent": "ea81cccb-ff3a-4f58-bf51-cd64c8ec9268",
+			"child": "8a4b22fc-ea86-493a-b389-7916de66f6f9",
+			"c_mp": "true",
+			"c_mch": "true",
+			"c_p": "one",
+			"c_ch": "one",
+			"c_cp": "",
+			"c_cch": "",
+			"cols": [
+				{
+					"id": "e85308ed-4b77-4ad9-905a-171fdacecb3c",
+					"parentcol": "4bfbb117-d2ef-4ea9-8a8a-b83b7d1f6596",
+					"childcol": "912ffe66-1fc1-439f-a36b-badd1fb901fd"
+				}
+			],
+			"generate": true,
+			"generateCustomCode": true,
+			"customCode": "",
+			"relationColor": "transparent"
+		}
+	},
+	"notes": {},
+	"lines": {},
+	"model": {
+		"name": "AbexII",
+		"id": "744793c8-13f0-48ba-bade-6e9c2f5621a0",
+		"activeDiagram": "37e06d8b-fb89-44c4-be35-b1ca1a52041b",
+		"desc": "diagrama entidade relacionamento referente ao projeto de abex 2",
+		"path": "",
+		"type": "PG",
+		"version": 1,
+		"parentTableInFkCols": true,
+		"caseConvention": "under",
+		"replaceSpace": "_",
+		"color": "transparent",
+		"sideSelections": true,
+		"isDirty": true,
+		"storedin": {
+			"major": 8,
+			"minor": 5,
+			"extra": 1
+		},
+		"laststoredin": {
+			"major": 8,
+			"minor": 5,
+			"extra": 1
+		},
+		"writeFileParam": false,
+		"authorName": "",
+		"companyDetails": "",
+		"companyUrl": "",
+		"def_coltopk": true,
+		"pg": {
+			"schema": ""
+		},
+		"sqlSettings": {
+			"wrapLines": true,
+			"wrapOffset": 80,
+			"indent": true,
+			"indentationString": "spaces",
+			"indentationSize": 2,
+			"limitItemsOnLine": true,
+			"maxListItemsOnLine": 3,
+			"statementDelimiter": ";",
+			"routineDelimiter": ";",
+			"keywordCase": "upper",
+			"identiferCase": "original",
+			"includeSchema": "always",
+			"quotation": "if_needed",
+			"includeGeneratedNames": "always"
+		},
+		"nameAutoGeneration": {
+			"keys": true,
+			"indexes": true,
+			"relations": true
+		},
+		"connectionVersion": ""
+	},
+	"otherObjects": {},
+	"diagrams": {
+		"37e06d8b-fb89-44c4-be35-b1ca1a52041b": {
+			"name": "Main Diagram",
+			"description": "",
+			"id": "37e06d8b-fb89-44c4-be35-b1ca1a52041b",
+			"keysgraphics": true,
+			"linegraphics": "basic",
+			"zoom": 1,
+			"background": "transparent",
+			"lineColor": "transparent",
+			"isOpen": true,
+			"main": true,
+			"diagramItems": {
+				"92a3e7c2-33f7-416b-8593-2ba6c9a0c896": {
+					"referencedItemId": "92a3e7c2-33f7-416b-8593-2ba6c9a0c896",
+					"x": 247,
+					"y": 31,
+					"gHeight": 99,
+					"gWidth": 191,
+					"color": "#ffffff",
+					"background": "#f44336",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"63df53dd-d9e0-47f1-a7b4-558f3fa1f0ae": {
+					"referencedItemId": "63df53dd-d9e0-47f1-a7b4-558f3fa1f0ae",
+					"x": 555,
+					"y": 79,
+					"gHeight": 117,
+					"gWidth": 240,
+					"color": "#ffffff",
+					"background": "#03a9f4",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"27904be4-5bff-4053-bb9d-867fe78a82a9": {
+					"referencedItemId": "27904be4-5bff-4053-bb9d-867fe78a82a9",
+					"x": 279,
+					"y": 344,
+					"gHeight": 117,
+					"gWidth": 294,
+					"color": "#ffffff",
+					"background": "#673ab7",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"393935fc-b6c3-4306-8c58-77993821c0ed": {
+					"referencedItemId": "393935fc-b6c3-4306-8c58-77993821c0ed",
+					"x": 112,
+					"y": 183,
+					"gHeight": 122,
+					"gWidth": 294,
+					"color": "#ffffff",
+					"background": "#e91e63",
+					"resized": true,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"c9401107-8f4a-4a36-8982-323df7d069b3": {
+					"referencedItemId": "c9401107-8f4a-4a36-8982-323df7d069b3",
+					"x": 705,
+					"y": 350,
+					"gHeight": 63,
+					"gWidth": 290,
+					"color": "#ffffff",
+					"background": "#00bcd4",
+					"resized": true,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"e934d16c-f923-4506-9921-c1727dabc28c": {
+					"referencedItemId": "e934d16c-f923-4506-9921-c1727dabc28c",
+					"x": 733,
+					"y": 488,
+					"gHeight": 117,
+					"gWidth": 243,
+					"color": "#ffffff",
+					"background": "#999999",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"ea81cccb-ff3a-4f58-bf51-cd64c8ec9268": {
+					"referencedItemId": "ea81cccb-ff3a-4f58-bf51-cd64c8ec9268",
+					"x": 884,
+					"y": 52,
+					"gHeight": 81,
+					"gWidth": 294,
+					"color": "#ffffff",
+					"background": "#795548",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				},
+				"8a4b22fc-ea86-493a-b389-7916de66f6f9": {
+					"referencedItemId": "8a4b22fc-ea86-493a-b389-7916de66f6f9",
+					"x": 1076,
+					"y": 245,
+					"gHeight": 99,
+					"gWidth": 250,
+					"color": "#ffffff",
+					"background": "#3f51b5",
+					"resized": false,
+					"autoExpand": true,
+					"backgroundOpacity": "10",
+					"collapsed": false
+				}
+			},
+			"scroll": {
+				"x": 0,
+				"y": 0
+			},
+			"type": "erd",
+			"showHorizontal": true,
+			"showDescriptions": true,
+			"showIndicators": true,
+			"showProgress": true,
+			"lineWidth": "2",
+			"boxSize": "0",
+			"boxSpacing": "2",
+			"boxAlign": "center",
+			"showIndicatorCaptions": true,
+			"showEstimatedSize": false,
+			"showSchemaContainer": true,
+			"showEmbeddedInParents": true,
+			"showCardinalityCaptions": true,
+			"showRelationshipNames": false,
+			"showLineCaptions": false,
+			"showColumns": true,
+			"showColumnDataTypes": true,
+			"showSampleData": false,
+			"showTableIndexes": true,
+			"showTableDescriptions": false,
+			"showRelations": true,
+			"backgroundImage": "na",
+			"descriptionsColor": "transparent",
+			"embeddedSpacing": "2",
+			"showMainIcon": true,
+			"showLabels": true,
+			"showCustomizations": false
+		}
+	},
+	"diagramsOrder": [],
+	"order": [
+		"27904be4-5bff-4053-bb9d-867fe78a82a9",
+		"c9401107-8f4a-4a36-8982-323df7d069b3",
+		"393935fc-b6c3-4306-8c58-77993821c0ed",
+		"92a3e7c2-33f7-416b-8593-2ba6c9a0c896",
+		"e934d16c-f923-4506-9921-c1727dabc28c",
+		"ea81cccb-ff3a-4f58-bf51-cd64c8ec9268",
+		"63df53dd-d9e0-47f1-a7b4-558f3fa1f0ae",
+		"8a4b22fc-ea86-493a-b389-7916de66f6f9",
+		"57931f73-932e-4cf7-b1dd-0fb019d155f4",
+		"fe040e40-0df5-418d-8cd7-0fb5f65b3df6",
+		"d80ef08e-b099-4e0e-86e7-6c75bb24b8b1",
+		"abe59e68-05ef-4f76-b0e3-7482f9c8fb17",
+		"9334930a-6f7f-4947-bf11-30d8e6ecdd3e",
+		"20a99edf-6bab-4ae5-877c-95cd7e1a09df",
+		"0f48ddcf-572a-4fdb-a9c9-939471e40920"
+	],
+	"collapsedTreeItems": [],
+	"reverseStats": {}
+}
