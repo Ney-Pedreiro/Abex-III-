@@ -11,6 +11,7 @@ FOREIGN KEY (Personagem_idPersonagem) REFERENCES Personagem (idPersonagem)
 CREATE TABLE Compra(
 idCompra INTEGER NOT NULL,
 Personagem_idPersonagem INTEGER NOT NULL,
+Quantidade_comprada INTEGER NOT NULL,
 PRIMARY KEY(idCompra),
 CONSTRAINT Compra_Personagem_idPersonagem_fkey
 FOREIGN KEY (Personagem_idPersonagem) REFERENCES Personagem (idPersonagem)
